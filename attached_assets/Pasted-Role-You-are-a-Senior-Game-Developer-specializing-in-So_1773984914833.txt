@@ -1,0 +1,34 @@
+Role: You are a Senior Game Developer specializing in Socket.io and React.
+
+Objective: Build a fully functional, web-based multiplayer "Uno" clone.
+
+Core Features:
+
+Lobby System: A landing page where users enter a Username and either Create a Room (generates a 4-letter code) or Join a Room via a code.
+
+Real-time Multiplayer: Use WebSockets (Socket.io) to sync game states between players. Support 2–4 players per room.
+
+The Game Board:
+
+A central "Discard Pile" showing the current card.
+
+A "Draw Pile" to take new cards.
+
+The player's hand at the bottom (cards should be clickable to play).
+
+Opponent indicators showing how many cards they have left.
+
+Game Logic:
+
+Standard Uno rules: Match by color or number.
+
+Action cards: Skip, Reverse, and Draw Two.
+
+Wild cards: Wild (choose color) and Wild Draw Four.
+
+Turn-based system: Only the active player can interact.
+
+Social Features: A persistent chat box on the side of the game screen where players in the same room can send messages.
+
+UI/UX Requirements (The "Real Game" Feel):Visual Aesthetic: Use a Dark Mode Glassmorphism theme. The background should be a subtle animated mesh gradient (Deep Purples/Blues). Game cards should have a "plastic" sheen, rounded corners, and subtle drop shadows ($box-shadow: 0\, 10px\, 20px\, rgba(0,0,0,0.3)$).Card Physics & Animations:Use Framer Motion or CSS Keyframes for smooth transitions.Hover Effect: Cards in the player's hand should "fan out" and lift upward when hovered.Dealing Animation: When the game starts, cards should "fly" from the deck to the players' hands.Play Animation: When a card is played, it should slide and rotate slightly as it lands on the discard pile.The "Arena" Layout:Center Stage: The draw pile and discard pile should be slightly angled in 3D space ($transform: rotateX(20deg)$).Player Avatars: Use circular glowing borders. The active player’s border should pulse with a "Golden Glow" to indicate their turn.Indicators: Show a "Current Color" indicator as a glowing aura around the entire game board.Responsive Chat & Sidebar:A semi-transparent, blur-effect ($backdrop-filter: blur(10px)$) sidebar for chat.Chat messages should "pop" in with a fade-in-up animation.Sound Logic (Placeholders): Include logic to trigger "Click," "Card Slide," and "Turn Notification" sounds (use placeholders like playCard.mp3).Functional Logic Upgrade:Name Tags: Floating labels above each player with their chosen name and a "Cards Left" counter.Wild Color Picker: A sleek overlay wheel (not a basic dropdown) that appears when a Wild card is played.Uno Button: A large, high-contrast "UNO!" button that appears only when a player has 2 cards left.
+Technical Stack: Use HTML, Framer Motion for animations, Tailwind CSS, and JavaScript (Node.js/Express with Socket.io). Ensure the game state is managed on the server to prevent cheating.
