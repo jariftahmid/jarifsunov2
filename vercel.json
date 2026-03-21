@@ -3,10 +3,7 @@
   "builds": [
     {
       "src": "artifacts/uno-game/package.json",
-      "use": "@vercel/static-build",
-      "options": {
-        "distDir": "dist"
-      }
+      "use": "@vercel/static-build"
     },
     {
       "src": "artifacts/api-server/src/index.ts",
@@ -19,8 +16,11 @@
       "dest": "/artifacts/api-server/src/index.ts"
     },
     {
+      "handle": "filesystem"
+    },
+    {
       "src": "/(.*)",
-      "dest": "/artifacts/uno-game/dist/$1"
+      "dest": "/index.html"
     }
   ]
 }
