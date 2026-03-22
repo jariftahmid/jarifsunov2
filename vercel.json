@@ -4,7 +4,9 @@
     {
       "src": "artifacts/uno-game/package.json",
       "use": "@vercel/static-build",
-      "config": { "outputDirectory": "public" }
+      "config": {
+        "outputDirectory": "dist"
+      }
     },
     {
       "src": "artifacts/api-server/package.json",
