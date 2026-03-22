@@ -7,7 +7,7 @@
       "config": { "outputDirectory": "public" }
     },
     {
-      "src": "artifacts/api-server/src/index.ts",
+      "src": "artifacts/api-server/package.json",
       "use": "@vercel/node"
     }
   ],
