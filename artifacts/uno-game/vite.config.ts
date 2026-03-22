@@ -29,7 +29,7 @@ export default defineConfig({
 
   // ⚠️ IMPORTANT CHANGE HERE
   build: {
-    outDir: "dist",
+    outDir: "public",   // ✅ FIXED (was dist/public ❌)
     emptyOutDir: true,
   },
 
